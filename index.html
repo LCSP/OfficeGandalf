@@ -1,0 +1,50 @@
+<!DOCTYPE <!DOCTYPE html>
+<?php
+txt_code.value = (response);
+?>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="gandalf_style.css" media="screen"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<title>Gandalf In The Office</title>
+</head>
+<body onunload="hide()">
+
+<div id="form" class="formBox"><br>
+	<div class="title_text">Office Gandalf</div>
+	<input class="txt_box" type="text" id="txt_code">
+	<div id="info" class="info_text">Paste the code here and press Join or create one pressing Create...</div>
+	<button type="button" class="button1" id="join">Join</button><br>
+	<button type="button" class="button2" id="create">Create</button>
+	<button type="button" class="button3" id="start">Start</button>
+	</div>
+
+<div class="fullscreen-bg">
+    <video id="mp_player" loop poster="img/poster.gif" class="fullscreen-bg__video">
+        <source src="img/cake_is_a_lie.webm" type="video/webm">     
+    </video>
+</div>
+<img class="mepes" src="img/mepes.png">
+
+
+
+<script src="js/format.js"></script>
+<script>
+function hide() {
+    jQuery.ajax({              
+                url:   'php/cleanup.php',
+                type:  'post',
+                beforeSend: function () {
+                        
+                },
+                success:  function (response) {
+                        
+
+                }
+        });
+   return null;
+}
+</script>
+
+</body>
+</html>
